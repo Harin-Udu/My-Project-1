@@ -33,6 +33,10 @@ header {
   font-size: 28px;
   font-weight: bold;
   color: #c86b85;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
 }
 
 .nav-links {
@@ -87,14 +91,36 @@ header {
   padding: 20px;
 }
 
-.hero-content h1 {
-  font-size: 52px;
-  margin-bottom: 15px;
+.hero-topic {
+  font-family: 'Playfair Display';
+  font-size:70px;
+  line-height: 1;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
 }
 
-.hero-content p {
-  font-size: 20px;
+.hero-topic::after {
+  content: "";
+  width: 400px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.hero-content {  
+  font-family: 'Playfair Display';
+  font-size: 25px;
   margin-bottom: 25px;
+  line-height: 1;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: relative;
+  margin-top: 0px;
 }
 
 .services,
