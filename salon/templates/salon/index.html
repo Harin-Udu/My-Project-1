@@ -4,10 +4,9 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valencia Salon</title>
-  <link rel="stylesheet" href="{% static 'salon/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'salon/css/main_page.css' %}" />
 </head>
 <body>
 
@@ -35,7 +34,7 @@
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section class="services">
     <h2>Our Services</h2>
     <div class="service-cards">
       <div class="card">
@@ -53,55 +52,58 @@
     </div>
   </section>
 
-  <section class="about" id="about">
-  <div class="about-content">
-    <h2>About Valencia</h2>
-
-    <p>
-      Valencia Salon is more than just a beauty destination — it is a place where
-      style meets confidence. Our team of experienced professionals is dedicated
-      to delivering personalized services that enhance your natural beauty.
-    </p>
-
-    <p>
-      From precision haircuts to advanced skincare treatments, we use only
-      premium-quality products and the latest techniques to ensure every client
-      leaves feeling refreshed, confident, and satisfied.
-    </p>
-
-    <p>
-      Whether you're preparing for a special occasion or simply treating yourself,
-      Valencia offers a relaxing and luxurious environment tailored to your needs.
-    </p>
-
-    <div class="about-highlights">
-      <div class="highlight">
-        <h3>✔ Experienced Stylists</h3>
-        <p>Our team brings years of expertise in modern beauty trends.</p>
-      </div>
-
-      <div class="highlight">
-        <h3>✔ Premium Products</h3>
-        <p>We use only trusted, high-quality salon-grade products.</p>
-      </div>
-
-      <div class="highlight">
-        <h3>✔ Relaxing Environment</h3>
-        <p>A calm and luxurious space designed for your comfort.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="gallery" id="gallery">
+  <section class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <div class="gallery-item">Image 1</div>
-      <div class="gallery-item">Image 2</div>
-      <div class="gallery-item">Image 3</div>
-      <div class="gallery-item">Image 4</div>
+      <div class="gallery-item">
+        <img src="{% static 'salon/images/salon_1.jpeg' %}" alt="salon_1">
+      </div>
+      <div class="gallery-item">
+        <img src="{% static 'salon/images/salon_2.jpeg' %}" alt="salon_2">
+      </div>
+      <div class="gallery-item">
+        <img src="{% static 'salon/images/salon_3.jpeg' %}" alt="salon_3">
+      </div>
+      <div class="gallery-item">
+        <img src="{% static 'salon/images/salon_4.jpeg' %}" alt="salon_4">
+      </div>
     </div>
   </section>
+
+  <div class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-container"> 
+  <div class="review-card">
+    <p class="review-text">"Had an amazing experience at Valencia 100% recommend!"</p>
+    <div class="stars">★★★★★</div>
+    <h4>- Lavin</h4>
+  </div>
+
+  <div class="review-card">
+    <p class="review-text">"Super time there, and the gossip sessions are elite"</p>
+    <div class="stars">★★★★☆</div>
+    <h4>- Omindu</h4>
+  </div>
+
+  <div class="review-card">
+    <p class="review-text">"Really good expereinece, had a blast"</p>
+    <div class="stars">★★★★☆</div>
+    <h4>- Chenali</h4>
+  </div>
+
+  <div class="review-card">
+    <p class="review-text">"My barber Harin was an amazing talent: cut my hair well and had a great conversation"</p>
+    <div class="stars">★★★★☆</div>
+    <h4>- Dinulaka</h4>
+  </div>
+
+  <div class="review-card">
+    <p class="review-text">"Needed a quick cut and left really satisfied"</p>
+    <div class="stars">★★★★★</div>
+    <h4>- Uvindu</h4>
+  </div>  
+  </div>
+</div>
 
   <section class="contact" id="contact">
   <div class="contact-container">
@@ -171,3 +173,4 @@
 
 </body>
 </html>
+
