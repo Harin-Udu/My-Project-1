@@ -68,3 +68,21 @@ header {
 .btn:hover {
   background: #a94d67;
 }
+
+/* ── HERO ── */
+.help-hero {
+  background: linear-gradient(135deg, #f7d6e0 0%, #fce4ec 60%, #fffafc 100%);
+  padding: 90px 20px 70px;
+  text-align: center;
+}
+
+.help-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  color: #c86b85;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+
