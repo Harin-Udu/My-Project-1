@@ -155,3 +155,59 @@ header {
   margin-top: -20px;
   margin-bottom: 44px;
 }
+
+/* ── OUR STORY ── */
+.story-grid {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.story-text p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.story-badge {
+  flex: 0 0 240px;
+  background: #c86b85;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(200,107,133,0.35);
+}
+
+.badge-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.badge-num-sm {
+  font-size: 44px;
+}
+
+.badge-label {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.badge-divider {
+  margin-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 20px;
+}
