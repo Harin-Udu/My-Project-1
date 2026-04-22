@@ -85,4 +85,20 @@ header {
   line-height: 1;
 }
 
+.help-hero-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #c86b85;
+  display: block;
+  margin: 14px auto 0;
+  border-radius: 10px;
+}
 
+.help-hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #888;
+  margin-top: 16px;
+  font-style: italic;
+}
