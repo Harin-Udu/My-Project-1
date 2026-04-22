@@ -124,3 +124,27 @@ header {
   border-bottom: 3px solid #f3d7df;
   cursor: default;
 }
+
+.quick-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(200, 107, 133, 0.15);
+  border-bottom-color: #c86b85;
+}
+
+.quick-icon {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.quick-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: #c86b85;
+  margin-bottom: 8px;
+}
+
+.quick-card p {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.6;
+}
