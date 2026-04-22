@@ -211,3 +211,46 @@ header {
   border-top: 1px solid rgba(255,255,255,0.3);
   padding-top: 20px;
 }
+
+/* ── SERVICES ── */
+.service-cards-about {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.service-card-about {
+  background: white;
+  padding: 36px 28px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid #c86b85;
+}
+
+.service-card-about:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(200,107,133,0.2);
+}
+
+.service-icon {
+  font-size: 44px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.service-card-about h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #c86b85;
+  margin-bottom: 12px;
+}
+
+.service-card-about p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.75;
+}
