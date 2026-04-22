@@ -25,6 +25,20 @@
     </nav>
   </header>
  
+    <nav class="navbar">
+      <div class="logo">Valencia</div>
+      <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'our_team' %}">Our Team</a></li>
+        <li><a href="{% url 'help' %}">Support</a></li>
+        <li><a href="/booking/">Book Now</a></li>
+        <li><a href="/accounts/login/">Login</a></li>
+      </ul>
+      <a href="/booking/" class="btn">Book Now</a>
+    </nav>
+  </header>
+
   <!-- HERO -->
   <section class="about-hero">
     <div class="about-hero-inner">
@@ -33,7 +47,7 @@
     </div>
   </section>
 
- <!-- OUR STORY -->
+  <!-- OUR STORY -->
   <section class="about-section">
     <h2 class="section-heading">Our Story</h2>
     <div class="story-grid">
@@ -55,9 +69,9 @@
         </div>
       </div>
     </div>
-  </section>    
+  </section>
 
-   <!-- SERVICES -->
+  <!-- SERVICES -->
   <section class="about-section about-section-alt">
     <h2 class="section-heading">What We Offer</h2>
     <p class="section-subtext">From a quick trim to a complete bridal transformation — we've got you covered.</p>
@@ -78,8 +92,9 @@
         <p>Your big day deserves perfection. Our bridal packages include consultation, trial sessions, and full coverage to ensure you look stunning from ceremony to celebration.</p>
       </div>
     </div>
- </section>
-   <!-- WHY CHOOSE US -->
+  </section>
+
+  <!-- WHY CHOOSE US -->
   <section class="about-section">
     <h2 class="section-heading">Why Choose Valencia</h2>
     <div class="highlights-grid">
@@ -114,7 +129,7 @@
     </div>
   </section>
 
-   <!-- CTA -->
+  <!-- CTA -->
   <section class="about-cta">
     <h2>Ready for a New Look?</h2>
     <p>Book your appointment online in minutes and let us take care of the rest.</p>
