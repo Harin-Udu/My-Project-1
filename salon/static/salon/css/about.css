@@ -304,3 +304,41 @@ header {
   color: #777;
   line-height: 1.7;
 }
+
+/* ── CTA ── */
+.about-cta {
+  background: linear-gradient(135deg, #c86b85, #a94d67);
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.about-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  margin-bottom: 14px;
+}
+
+.about-cta p {
+  font-size: 18px;
+  margin-bottom: 34px;
+  opacity: 0.92;
+}
+
+.btn-cta {
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  color: #c86b85;
+  font-weight: 700;
+  padding: 16px 38px;
+  border-radius: 50px;
+  font-size: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  background: #fde8ef;
+  transform: translateY(-2px);
+}
