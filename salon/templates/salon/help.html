@@ -182,6 +182,29 @@
       </div>
     </div>
 
+        <!-- Contact Form -->
+    <div class="help-form-box">
+      <h3>Send Us a Message</h3>
+      {% if success %}
+        <p style="color: green; margin-bottom: 15px;">Your message has been sent! We'll get back to you shortly.</p>
+      {% endif %}
+      <form class="help-form" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="topic" required>
+          <option value="">Select a Topic</option>
+          <option value="booking">Booking &amp; Appointments</option>
+          <option value="services">Services &amp; Pricing</option>
+          <option value="payment">Payments &amp; Refunds</option>
+          <option value="bridal">Bridal Packages</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="message" placeholder="Describe your question or concern..." rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
     </div>
   </section>
