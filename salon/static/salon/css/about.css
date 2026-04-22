@@ -117,3 +117,41 @@ header {
   color: rgba(255,255,255,0.92);
   margin-top: 16px;
 }
+
+/* ── SECTIONS ── */
+.about-section {
+  padding: 80px 10%;
+  background: #fffafc;
+}
+
+.about-section-alt {
+  background: #fff7f9;
+}
+
+/* ── SHARED HEADING ── */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #c86b85;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.section-heading::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #c86b85;
+  display: block;
+  margin: 10px auto 36px;
+  border-radius: 10px;
+}
+
+.section-subtext {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: -20px;
+  margin-bottom: 44px;
+}
