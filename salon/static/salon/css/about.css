@@ -351,3 +351,13 @@ footer {
   padding: 18px;
 }
 
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .about-hero-title { font-size: 44px; }
+  .section-heading { font-size: 34px; }
+  .highlights-grid { grid-template-columns: 1fr; }
+  .story-grid { flex-direction: column; }
+  .story-badge { width: 100%; flex: unset; }
+}
+
+
