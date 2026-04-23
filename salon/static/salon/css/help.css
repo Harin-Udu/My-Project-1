@@ -148,3 +148,29 @@ header {
   color: #888;
   line-height: 1.6;
 }
+
+/*  SECTION WRAPPER  */
+.help-section {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 24px;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #c86b85;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #c86b85;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
