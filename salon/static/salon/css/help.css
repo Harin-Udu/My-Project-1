@@ -70,37 +70,52 @@ header {
 }
 
 /* ── HERO ── */
-.help-hero {
-  background: linear-gradient(135deg, #f7d6e0 0%, #fce4ec 60%, #fffafc 100%);
-  padding: 90px 20px 70px;
+.about-hero {
+  height: 380px;
+  background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.help-hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  color: #c86b85;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 12px;
-  line-height: 1;
-}
-
-.help-hero-title::after {
+.about-hero::before {
   content: "";
-  width: 120px;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.15) 0%, transparent 70%);
+}
+
+.about-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  color: white;
+  line-height: 1;
+  text-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-hero-title::after {
+  content: "";
+  width: 260px;
   height: 2px;
-  background: #c86b85;
+  background: rgba(255,255,255,0.7);
   display: block;
-  margin: 14px auto 0;
+  margin: 16px auto 0;
   border-radius: 10px;
 }
 
-.help-hero-subtitle {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  color: #888;
+.about-hero-subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: rgba(255,255,255,0.92);
   margin-top: 16px;
-  font-style: italic;
 }
 /*  QUICK LINKS */
 .help-quick {
