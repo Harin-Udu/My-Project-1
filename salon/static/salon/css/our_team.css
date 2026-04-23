@@ -69,6 +69,55 @@ header {
   background: #a94d67;
 }
 
+/* ── HERO ── */
+.about-hero {
+  height: 380px;
+  background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.15) 0%, transparent 70%);
+}
+
+.about-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  color: white;
+  line-height: 1;
+  text-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-hero-title::after {
+  content: "";
+  width: 260px;
+  height: 2px;
+  background: rgba(255,255,255,0.7);
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 10px;
+}
+
+.about-hero-subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: rgba(255,255,255,0.92);
+  margin-top: 16px;
+}
+
 .box {
   background: white;
   padding: 25px;
@@ -170,3 +219,4 @@ footer {
   padding: 18px;
   margin-top: 30px;
 }
+
