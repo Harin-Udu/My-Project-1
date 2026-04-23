@@ -24,13 +24,16 @@
       <a href="" class="btn">Book Now</a>
     </nav>
   </header>
- 
-   <!-- HERO -->
+
+      <!-- the main topic -->
   <section class="help-hero">
-    <p class="help-hero-title">Support Centre</p>
-    <p class="help-hero-subtitle">We're here to help — find answers or reach out anytime</p>
-   
-   <!-- QUICK LINKS -->
+    <div class="help-hero-inner">
+      <p class="help-hero-title">Support Centre</p>
+      <p class="help-hero-subtitle">We're here to help answer all your inquiries</p>
+    </div>
+  </section>
+
+      <!-- the help section -->
   <div class="help-quick">
     <div class="quick-card">
       <div class="quick-icon">📅</div>
@@ -52,12 +55,12 @@
       <h3>Visit Us</h3>
       <p>Location, opening hours, and parking guidance </p>
     </div>
-
-     <!-- FAQ -->
+  </div>
+     <!-- related to frequent questions -->
      <section class="help-section">
       <h2 class="section-heading">Frequently Asked Questions</h2>
       <div class="faq-list">
-       <!-- Booking -->
+       <!-- booking related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           How do I book an appointment online?
@@ -65,8 +68,9 @@
         </button>
         <div class="faq-answer">
           You can book an appointment directly through our website by clicking the Book Now button in the navigation bar. Select your preferred service, choose a date and time, and confirm your booking. You will need to be logged in to complete a booking, creating an account is free and takes under a minute.
+        </div>
       </div>
-
+      <!-- cancelling and rescheduling related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Can I reschedule or cancel my appointment?
@@ -75,7 +79,9 @@
         <div class="faq-answer">
           Yes. We ask that you reschedule or cancel at least <strong>24 hours before</strong> your appointment so our stylists can plan their schedules. To make changes, log in to your account and visit your booking history, or contact us directly by phone or email.
         </div>
+      </div>
 
+      <!-- other booking -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Do I need an account to book?
@@ -84,8 +90,9 @@
         <div class="faq-answer">
           Yes, a free account is required to book online. This lets you view your upcoming appointments, track your booking history, and receive confirmation messages. You can sign up quickly on our <a href="/signup/" style="color:#c86b85;">Sign Up page</a>.
         </div>
+      </div>
 
-      <!-- Services -->
+      <!-- service related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What services does Valencia Salon offer?
@@ -93,7 +100,6 @@
         </button>
         <div class="faq-answer">
           We offer a range of beauty services including <strong>Hair Styling</strong> (cuts, colouring, and treatments), <strong>Facials</strong> (relaxing skin-care treatments), and <strong>Bridal Makeup</strong> (full packages tailored for your special day). We are always expanding our offerings, check our homepage for the latest.
-
         </div>
       </div>
 
@@ -116,9 +122,8 @@
           Absolutely. Our bridal packages are fully customisable and include a pre-wedding consultation to discuss your vision, a trial session, and full makeup on the day. We recommend booking bridal services <strong>at least 4–6 weeks in advance</strong> to secure your date.
         </div>
       </div>
-      </div>
 
-        <!-- Payments -->
+        <!-- payment related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What payment methods do you accept?
@@ -139,7 +144,7 @@
         </div>
       </div>
 
-       <!-- Location -->
+       <!-- location related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Where is Valencia Salon located?
@@ -159,31 +164,32 @@
           We are open <strong>Monday to Saturday, 9:00 AM – 7:00 PM</strong>, and on <strong>Sundays from 10:00 AM – 5:00 PM</strong>. We recommend booking ahead to guarantee your preferred time slot, especially on weekends.
         </div>
       </div>
+    </section>
 
-       <!-- CONTACT SUPPORT -->
+       <!-- contact support related section -->
        <section class="help-contact">
         <h2>Still Need Help?</h2>
         <p>Our team is happy to answer any questions not covered above. Reach out through any of the channels below.</p>
 
         <div class="contact-channels">
-        <div class="channel-card">
-        <div class="channel-icon">📞</div>
-        <h4>Phone</h4>
-        <p>+94 77 123 4567</p>
+          <div class="channel-card">
+            <div class="channel-icon">📞</div>
+            <h4>Phone</h4>
+            <p>+94 77 123 4567</p>
+          </div>
+          <div class="channel-card">
+            <div class="channel-icon">✉️</div>
+            <h4>Email</h4>
+            <p>info@valenciasalon.com</p>
+          </div>
+          <div class="channel-card">
+            <div class="channel-icon">🕐</div>
+            <h4>Hours</h4>
+            <p>Mon–Sat: 9 AM – 7 PM<br>Sun: 10 AM – 5 PM</p>
+          </div>
         </div>
-        <div class="channel-card">
-        <div class="channel-icon">✉️</div>
-        <h4>Email</h4>
-        <p>info@valenciasalon.com</p>
-        </div>
-        <div class="channel-card">
-        <div class="channel-icon">🕐</div>
-        <h4>Hours</h4>
-        <p>Mon–Sat: 9 AM – 7 PM<br>Sun: 10 AM – 5 PM</p>
-      </div>
-    </div>
 
-        <!-- Contact Form -->
+        <!-- submitting a form related  -->
     <div class="help-form-box">
       <h3>Send Us a Message</h3>
       {% if success %}
@@ -203,13 +209,9 @@
         </select>
         <textarea name="message" placeholder="Describe your question or concern..." rows="5" required></textarea>
         <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-     <footer>
-    <p>&copy; 2026 Valencia Salon. All rights reserved.</p>
-  </footer>
+        </form>
+        </div>
+      </section>
 
   <script>
     function toggleFaq(btn) {
@@ -221,6 +223,10 @@
       if (!isOpen) item.classList.add('open');
     }
   </script>
-  </section>
+
+  <!-- footer section with terms and conditions -->
+  <footer>
+    <p>&copy; 2026 Valencia Salon. All rights reserved.</p>
+  </footer>
 </body>
 </html>
