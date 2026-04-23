@@ -308,3 +308,50 @@ header {
   color: #777;
   margin-bottom: 0;
 }
+/* ── CONTACT FORM ── */
+.help-form-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 36px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.help-form-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.help-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.help-form input,
+.help-form select,
+.help-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+.help-form input:focus,
+.help-form select:focus,
+.help-form textarea:focus {
+  border-color: #c86b85;
+}
+
+.help-form button {
+  border: none;
+  cursor: pointer;
+}
