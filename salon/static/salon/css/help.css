@@ -242,3 +242,69 @@ header {
   max-height: 300px;
   padding: 0 24px 20px;
 }
+
+/* ── CONTACT SUPPORT STRIP ── */
+.help-contact {
+  background: #fdf1ee;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.help-contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #c86b85;
+  margin-bottom: 12px;
+}
+
+.help-contact h2::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #c86b85;
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 10px;
+}
+
+.help-contact p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 36px;
+}
+
+.contact-channels {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.channel-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 28px 30px;
+  width: 220px;
+  text-align: center;
+}
+
+.channel-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.channel-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #c86b85;
+  margin-bottom: 6px;
+}
+
+.channel-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 0;
+}
