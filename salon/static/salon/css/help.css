@@ -355,3 +355,12 @@ header {
   border: none;
   cursor: pointer;
 }
+
+/* FOOTER */
+footer {
+  background: #c86b85;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
