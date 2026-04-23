@@ -70,7 +70,7 @@ header {
 }
 
 /* ── HERO ── */
-.about-hero {
+.help-hero {
   height: 380px;
   background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
   display: flex;
@@ -81,19 +81,19 @@ header {
   overflow: hidden;
 }
 
-.about-hero::before {
+.help-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.15) 0%, transparent 70%);
 }
 
-.about-hero-inner {
+.help-hero-inner {
   position: relative;
   z-index: 1;
 }
 
-.about-hero-title {
+.help-hero-title {
   font-family: 'Playfair Display', serif;
   font-size: 72px;
   color: white;
@@ -101,7 +101,7 @@ header {
   text-shadow: 2px 4px 12px rgba(0,0,0,0.2);
 }
 
-.about-hero-title::after {
+.help-hero-title::after {
   content: "";
   width: 260px;
   height: 2px;
@@ -111,7 +111,7 @@ header {
   border-radius: 10px;
 }
 
-.about-hero-subtitle {
+.help-hero-subtitle {
   font-family: 'Great Vibes', cursive;
   font-size: 36px;
   color: rgba(255,255,255,0.92);
