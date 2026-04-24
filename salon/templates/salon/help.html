@@ -10,21 +10,33 @@
   <link rel="stylesheet" href="{% static 'salon/css/help.css' %}" />
 </head>
 <body class = "background">
-  <!-- the navigation bar section to move between projects -->
+  
+   <!-- the navigation bar section to move between projects -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Valencia</div>
-      <ul class="nav-links">
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
-        <li><a href="{% url 'our_team' %}">Our Team</a></li>
-        <li><a href="{% url 'help' %}">Support</a></li>
-        <li><a href="/booking/">Book Now</a></li>
-<li><a href="/accounts/login/">Login</a></li>
-      </ul>
-      <a href="" class="btn">Book Now</a>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <a href="{% url 'home' %}" class="logo">Valencia</a>
+
+    <ul class="nav-links">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About Us</a></li>
+      <li><a href="{% url 'our_team' %}">Our Team</a></li>
+      <li><a href="{% url 'help' %}">Support</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      {% if user.is_authenticated %}
+      <form action="/accounts/logout/" method="POST" style="display:inline;">
+        {% csrf_token %}
+        <button class="button">Logout</button>
+      </form>
+      <a href="/booking/" class="button">Book Now</a>
+    {% else %}
+      <a href="/accounts/login/" class="button">Login</a>
+      <a href="/booking/" class="button">Book Now</a>
+    {% endif %}
+    </div>
+  </nav>
+</header>
 
       <!-- the main topic section -->
   <section class="help-hero">
@@ -191,31 +203,8 @@
             <p>Mon–Sat: 9 AM – 7 PM<br>Sun: 10 AM – 5 PM</p>
           </div>
         </div>
+       </section>
 
-        <!-- submitting a form related section -->
-    <div class="help-form-box">
-      <h3>Send Us a Message</h3>
-      {% if success %}
-        <p style="color: green; margin-bottom: 15px;">Your message has been sent! We'll get back to you shortly.</p>
-      {% endif %}
-      <form class="help-form" method="POST">
-        {% csrf_token %}
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <select name="topic" required>
-          <option value="">Select a Topic</option>
-          <option value="booking">Booking &amp; Appointments</option>
-          <option value="services">Services &amp; Pricing</option>
-          <option value="payment">Payments &amp; Refunds</option>
-          <option value="bridal">Bridal Packages</option>
-          <option value="other">Other</option>
-        </select>
-        <textarea name="message" placeholder="Describe your question or concern..." rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-        </form>
-        </div>
-      </section>
- 
   <!-- java script to handle expanding and minimizing FAQ -->
   <script>
     function toggleFaq(btn) {
@@ -232,5 +221,6 @@
   <footer>
     <p>&copy; 2026 Valencia Salon. All rights reserved.</p>
   </footer>
+  
 </body>
 </html>
