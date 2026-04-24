@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<!-- the head contains all the url and other functions needed to run the html globally -->
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
@@ -10,6 +11,7 @@
 </head>
 <body>
 
+  <!-- the navigation bar section to move between projects -->
   <header>
     <nav class="navbar">
       <div class="logo">Valencia</div>
@@ -25,6 +27,7 @@
     </nav>
   </header>
 
+    <!-- the main heading of the page -->
   <section class="hero" id="home" style="background: url('{% static "salon/images/hero-banner-image.avif" %}') center/cover no-repeat;">
     <div class="hero-overlay">
       <div>
@@ -34,6 +37,7 @@
     </div>
   </section>
 
+  <!-- the services section -->
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-cards">
@@ -51,7 +55,8 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- the gallery section -->
   <section class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
@@ -70,44 +75,45 @@
     </div>
   </section>
 
+  <!-- the review section -->
   <div class="reviews">
-  <h2>Customer Reviews</h2>
-  <div class="reviews-container"> 
-  <div class="review-card">
-    <p class="review-text">"Had an amazing experience at Valencia 100% recommend!"</p>
-    <div class="stars">★★★★★</div>
-    <h4>- Lavin</h4>
-  </div>
+    <h2>Customer Reviews</h2>
+    <div class="reviews-container"> 
+      <div class="review-card">
+        <p class="review-text">"Had an amazing experience at Valencia 100% recommend!"</p>
+        <div class="stars">★★★★★</div>
+        <h4>- Lavin</h4>
+      </div>
 
-  <div class="review-card">
-    <p class="review-text">"Super time there, and the gossip sessions are elite"</p>
-    <div class="stars">★★★★☆</div>
-    <h4>- Omindu</h4>
-  </div>
+      <div class="review-card">
+        <p class="review-text">"Super time there, and the gossip sessions are elite"</p>
+        <div class="stars">★★★★☆</div>
+        <h4>- Omindu</h4>
+      </div>
 
-  <div class="review-card">
-    <p class="review-text">"Really good expereinece, had a blast"</p>
-    <div class="stars">★★★★☆</div>
-    <h4>- Chenali</h4>
-  </div>
-
-  <div class="review-card">
-    <p class="review-text">"My barber Harin was an amazing talent: cut my hair well and had a great conversation"</p>
-    <div class="stars">★★★★☆</div>
-    <h4>- Dinulaka</h4>
-  </div>
-
-  <div class="review-card">
-    <p class="review-text">"Needed a quick cut and left really satisfied"</p>
-    <div class="stars">★★★★★</div>
-    <h4>- Uvindu</h4>
-  </div>  
-  </div>
-</div>
-
-  <section class="contact" id="contact">
-  <div class="contact-container">
+      <div class="review-card">
+        <p class="review-text">"Really good expereinece, had a blast"</p>
+        <div class="stars">★★★★☆</div>
+        <h4>- Chenali</h4>
+      </div>
     
+      <div class="review-card">
+        <p class="review-text">"My barber Harin was an amazing talent: cut my hair well and had a great conversation"</p>
+        <div class="stars">★★★★☆</div>
+        <h4>- Dinulaka</h4>
+      </div>
+
+      <div class="review-card">
+        <p class="review-text">"Needed a quick cut and left really satisfied"</p>
+        <div class="stars">★★★★★</div>
+        <h4>- Uvindu</h4>
+      </div>  
+    </div>
+  </div>
+
+  <!-- the contact details section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
     <div class="contact-info">
       <h2>Contact Us</h2>
       <p>
@@ -163,10 +169,10 @@
   <button type="submit" class="btn">Send Message</button>
 </form>
     </div>
-
   </div>
 </section>
 
+  <!-- the footer section -->
   <footer>
     <p>&copy; 2026 Valencia Salon. All rights reserved.</p>
   </footer>
