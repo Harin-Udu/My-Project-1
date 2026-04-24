@@ -13,19 +13,23 @@ Steps:
 
   2.Then run, (This will save the folder in the location you want)
       
-      git clone https://github.com/Harin-Udu/My-Project-1.git
+    git clone https://github.com/Harin-Udu/My-Project-1.git
   
   3.Then run, (this leads the terminal to that specific location)
-      cd My-Project-1 
+      
+    cd My-Project-1 
   
   4. Then run, (this will open the folder where the project is)
-      code .
 
-  5. Once the folder is open then go to the terminal of that specfic folder and run the below code,
-      python manage.py runserver 
+    code .
 
-  6. Then run this code on the web to open the website,
-      http://127.0.0.1:8000/
+  6. Once the folder is open then go to the terminal of that specfic folder and run the below code,
+
+    python manage.py runserver 
+
+  8. Then run this code on the web to open the website,
+
+    http://127.0.0.1:8000/
 
 1.2. Zipping and extracting 
 
