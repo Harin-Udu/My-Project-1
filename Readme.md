@@ -129,4 +129,8 @@ This support page of the app has the below features,
 
 2.2.5. Booking page 
 
-This page has all the details related to booking an appointment 
+This page has all the details related to booking an appointment
+
+IMPORTANT 
+   - Users can't book on already passed dates and only on future dates
+   - For each timeslot you can only book 4 appointments 
