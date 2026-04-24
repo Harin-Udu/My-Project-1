@@ -1,9 +1,9 @@
 This Readme will provide the below clarifications,
 
-   💡 Guide on how to properly open the project locally  
-   🌟 Detailed description of all the key components and features of the project
+   1. Guide on how to properly open the project locally  
+   2. Detailed description of all the key components and features of the project
 
-💡 Guidence to open the project locally
+1. Guidence to open the project locally
 
 There are two main ways to open it locally 
 
