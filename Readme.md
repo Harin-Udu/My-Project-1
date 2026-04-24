@@ -1,6 +1,6 @@
 This Readme will provide the below clarifications,
 
-   - Guide on how to properly open the project locally
+   - Guide on how to properly open the project locally and create a database (for login)
      
    -  Detailed description of all the key components and features of the project
 
