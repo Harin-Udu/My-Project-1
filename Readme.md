@@ -64,7 +64,7 @@ Steps:
 
 2.1.2. salon folder
 
-   This is where all the content shown in the webpage is created. Each page is seperately made using a html which is in saloon/templates and a seperate css which is in salon/static/salon/css
+   This is where all the content shown in the webpage is created. Each page is seperately made using a html which is in salon/templates/salon and a seperate css which is in salon/static/salon/css
    
 2.2. Webpages and features 
 
