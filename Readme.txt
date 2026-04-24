@@ -11,14 +11,14 @@ There are two main ways to open it locally
 Steps: 
   1. Open your IDE (vs code, pycharm) and get the terminal of where you want to save the project 
 
-  2.Then run, 
-      git clone https://github.com/Harin-Udu/My-Project-1.git - This will save the folder in the location you want
+  2.Then run, (This will save the folder in the location you want)
+      git clone https://github.com/Harin-Udu/My-Project-1.git
   
-  3.Then run,
-      cd My-Project-1 - this leads the terminal to that specific location 
+  3.Then run, (this leads the terminal to that specific location)
+      cd My-Project-1 
   
-  4. Then run,
-      code . - this will open the folder where the project is 
+  4. Then run, (this will open the folder where the project is)
+      code .
 
   5. Once the folder is open then go to the terminal of that specfic folder and run the below code,
       python manage.py runserver 
