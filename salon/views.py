@@ -57,10 +57,13 @@ def booking_page(request):
 
             if selected_date < date.today():
                 error = 'You cannot book an appointment for a previous date.'
+
             elif selected_time < time(10, 0) or selected_time > time(22, 0):
                 error = 'Appointments can only be booked between 10:00 AM and 10:00 PM.'
+
             elif selected_time.minute not in [0, 30, 45]:
                 error = 'Please select a valid appointment time.'
+
             else:
                 existing_count = Booking.objects.filter(
                     appointment_date=selected_date,
@@ -85,7 +88,6 @@ def booking_page(request):
         'success': success,
         'error': error
     })
-
 
 def our_team(request):
     return render(request, 'salon/our_team.html')
