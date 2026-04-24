@@ -1,3 +1,4 @@
+/* ── style for the navigation bar ── */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 18px 5%;
-  position: relative;   /* important */
+  position: relative;   
 }
 
 .logo {
@@ -85,7 +86,7 @@ header {
   background: #a94d67;   
 }
 
-/* ── HERO ── */
+/* ── styles for the main topic ── */
 .help-hero {
   height: 380px;
   background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
@@ -133,7 +134,7 @@ header {
   color: rgba(255,255,255,0.92);
   margin-top: 16px;
 }
-/*  QUICK LINKS */
+/*  styles for the quick help section */
 .help-quick {
   max-width: 1000px;
   margin: 60px auto 0;
@@ -180,7 +181,7 @@ header {
   line-height: 1.6;
 }
 
-/*  SECTION WRAPPER  */
+/*  styles for section wrappers  */
 .help-section {
   max-width: 900px;
   margin: 70px auto;
@@ -206,7 +207,7 @@ header {
   border-radius: 10px;
 }
 
-/* ── FAQ ACCORDION ── */
+/* ── styles for the frequently asked questions section  ── */
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -274,7 +275,7 @@ header {
   padding: 0 24px 20px;
 }
 
-/* ── CONTACT SUPPORT STRIP ── */
+/* ── styles for the help section── */
 .help-contact {
   background: #fdf1ee;
   padding: 70px 20px;
@@ -339,55 +340,8 @@ header {
   color: #777;
   margin-bottom: 0;
 }
-/* ── CONTACT FORM ── */
-.help-form-box {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  padding: 36px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
 
-.help-form-box h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.help-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.help-form input,
-.help-form select,
-.help-form textarea {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 15px;
-  outline: none;
-  background: #fff;
-  color: #333;
-}
-
-.help-form input:focus,
-.help-form select:focus,
-.help-form textarea:focus {
-  border-color: #c86b85;
-}
-
-.help-form button {
-  border: none;
-  cursor: pointer;
-}
-
-/* FOOTER */
+/* footer section */
 footer {
   background: #c86b85;
   color: white;
