@@ -3,7 +3,7 @@ This Readme will provide the below clarifications,
    💡 Guide on how to properly open the project locally  
    🌟 Detailed description of all the key components and features of the project
 
-1. 💡 Guidence to open the project locally
+💡 Guidence to open the project locally
 
 There are two main ways to open it locally 
 
@@ -53,7 +53,7 @@ Steps:
 
     http://127.0.0.1:8000/
 
-2. 🌟 Details on the project
+🌟 Details on the project
 
 2.1. How to read the different folders and files 
 
