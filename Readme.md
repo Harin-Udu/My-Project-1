@@ -57,4 +57,44 @@ Steps:
 
 2.1. How to read the different folders and files 
 
-2
+2.1.1. config folder 
+
+   This is the brain of the project where the files inside this are essential to run the website mainly settings.py which controls all the aspects of the projects and urls.py which handles all the routing 
+
+2.1.2. salon folder
+
+   This is where all the content shown in the webpage is created. Each page is seperately made using a html and css file which will be highlighted in section 2.2
+
+2.2. Webpages and features 
+
+2.2.1. Main Page
+
+The main page of the app has the below features,
+
+   - A small description of services
+   - A gallary with pictures
+   - A review section
+   - A contact section with details
+
+2.2.2. About page 
+
+The about page of the app has the below features,
+
+   - A detailed story about the saloon
+   - A what we offer section
+   - A why chooose us section
+
+2.2.3. Our team page 
+
+This page has pictures of all the members of valencia saloon 
+
+2.2.4. Support page 
+
+This support page of the app has the below features,
+
+   - Frequently asked questions from various topics
+   - A contact section with details
+
+2.2.5. Booking page 
+
+This page has all the details related to booking an appointment 
