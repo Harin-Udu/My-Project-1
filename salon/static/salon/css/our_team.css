@@ -1,3 +1,4 @@
+/* ── style for the navigation bar ── */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 18px 5%;
-  position: relative;   /* important */
+  position: relative; 
 }
 
 .logo {
@@ -71,6 +72,7 @@ header {
   background: #a94d67;
 }
 
+/* ── styles for the main section ── */
 .button {
   background: #c86b85;   
   color: white;          
@@ -85,7 +87,7 @@ header {
   background: #a94d67;   
 }
 
-/* ── HERO ── */
+/* ──styles for the main topic section ── */
 .team-hero {
   height: 380px;
   background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
@@ -134,6 +136,7 @@ header {
   margin-top: 16px;
 }
 
+/* ── styles for the pictures ── */
 .box {
   background: white;
   padding: 25px;
@@ -228,6 +231,7 @@ header {
   line-height: 1.6;
 }
 
+/* ── styles for the footer section── */
 footer {
   background: #c86b85;
   color: white;
