@@ -23,11 +23,11 @@ Steps:
 
     code .
 
-  6. Once the folder is open then go to the terminal of that specfic folder and run the below code,
+  5. Once the folder is open then go to the terminal of that specfic folder and run the below code,
 
     python manage.py runserver 
 
-  8. Then run this code on the web to open the website,
+  6. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
@@ -48,7 +48,7 @@ Steps:
 
     python manage.py runserver 
 
-  8. Then run this code on the web to open the website,
+  7. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
