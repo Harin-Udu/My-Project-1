@@ -2,6 +2,7 @@ This Readme will provide the below clarifications,
   1. Guide on how to properly open the folder locally 
   2. Detailed description of all the key components and features of the project 
 
+
 1. Guidence to open the project locally
 
 There are two main ways to open it locally 
