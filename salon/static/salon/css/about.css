@@ -1,3 +1,4 @@
+/* ── style for the navigation bar ── */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 18px 5%;
-  position: relative;   /* important */
+  position: relative;  
 }
 
 .logo {
@@ -85,7 +86,7 @@ header {
   background: #a94d67;   
 }
 
-/* ── HERO ── */
+/* ── style for the main topic── */
 .about-hero {
   height: 380px;
   background: linear-gradient(135deg, #a94d67 0%, #c86b85 40%, #e8a0b0 80%, #fde8ef 100%);
@@ -134,7 +135,7 @@ header {
   margin-top: 16px;
 }
 
-/* ── SECTIONS ── */
+/* ── styles for the general stuff ── */
 .about-section {
   padding: 80px 10%;
   background: #fffafc;
@@ -144,7 +145,6 @@ header {
   background: #fff7f9;
 }
 
-/* ── SHARED HEADING ── */
 .section-heading {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
@@ -172,7 +172,7 @@ header {
   margin-bottom: 44px;
 }
 
-/* ── OUR STORY ── */
+/* ── styles ofr the our story section ── */
 .story-grid {
   display: flex;
   gap: 50px;
@@ -228,7 +228,7 @@ header {
   padding-top: 20px;
 }
 
-/* ── SERVICES ── */
+/* ── styles for services section ── */
 .service-cards-about {
   display: flex;
   justify-content: center;
@@ -271,7 +271,7 @@ header {
   line-height: 1.75;
 }
 
-/* ── WHY CHOOSE US ── */
+/* ── styles for why choose us section ── */
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -321,7 +321,7 @@ header {
   line-height: 1.7;
 }
 
-/* ── CTA ── */
+/* ── styles ofr the contact section ── */
 .about-cta {
   background: linear-gradient(135deg, #c86b85, #a94d67);
   text-align: center;
@@ -359,7 +359,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* ── FOOTER ── */
+/* ── styles for the footer ── */
 footer {
   background: #c86b85;
   color: white;
@@ -367,7 +367,7 @@ footer {
   padding: 18px;
 }
 
-/* ── RESPONSIVE ── */
+/* ── responsives ── */
 @media (max-width: 768px) {
   .about-hero-title { font-size: 44px; }
   .section-heading { font-size: 34px; }
