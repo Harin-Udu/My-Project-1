@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<!-- the head contains all the url and other functions needed to run the html globally -->
 <head>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="{% static 'salon/css/help.css' %}" />
 </head>
 <body class = "background">
-
+  <!-- the navigation bar section to move between projects -->
   <header>
     <nav class="navbar">
       <div class="logo">Valencia</div>
@@ -25,7 +26,7 @@
     </nav>
   </header>
 
-      <!-- the main topic -->
+      <!-- the main topic section -->
   <section class="help-hero">
     <div class="help-hero-inner">
       <p class="help-hero-title">Support Centre</p>
@@ -56,6 +57,7 @@
       <p>Location, opening hours, and parking guidance </p>
     </div>
   </div>
+ 
      <!-- related to frequent questions -->
      <section class="help-section">
       <h2 class="section-heading">Frequently Asked Questions</h2>
@@ -70,6 +72,7 @@
           You can book an appointment directly through our website by clicking the Book Now button in the navigation bar. Select your preferred service, choose a date and time, and confirm your booking. You will need to be logged in to complete a booking, creating an account is free and takes under a minute.
         </div>
       </div>
+       
       <!-- cancelling and rescheduling related -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
@@ -81,7 +84,7 @@
         </div>
       </div>
 
-      <!-- other booking -->
+      <!-- other booking section-->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Do I need an account to book?
@@ -92,7 +95,7 @@
         </div>
       </div>
 
-      <!-- service related -->
+      <!-- service related section -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What services does Valencia Salon offer?
@@ -123,7 +126,7 @@
         </div>
       </div>
 
-        <!-- payment related -->
+        <!-- payment related section -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What payment methods do you accept?
@@ -144,7 +147,7 @@
         </div>
       </div>
 
-       <!-- location related -->
+       <!-- location related section -->
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Where is Valencia Salon located?
@@ -189,7 +192,7 @@
           </div>
         </div>
 
-        <!-- submitting a form related  -->
+        <!-- submitting a form related section -->
     <div class="help-form-box">
       <h3>Send Us a Message</h3>
       {% if success %}
@@ -212,7 +215,8 @@
         </form>
         </div>
       </section>
-
+ 
+  <!-- java script to handle expanding and minimizing FAQ -->
   <script>
     function toggleFaq(btn) {
       const item = btn.closest('.faq-item');
@@ -224,7 +228,7 @@
     }
   </script>
 
-  <!-- footer section with terms and conditions -->
+  <!-- footer section section -->
   <footer>
     <p>&copy; 2026 Valencia Salon. All rights reserved.</p>
   </footer>
