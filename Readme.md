@@ -85,7 +85,7 @@ Steps:
 
    4. You will be able to see the database with all the content 
       
-2. Details on the project
+2 Details on the project
 
 2.1. How to read the different folders and files 
 
