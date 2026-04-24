@@ -29,19 +29,15 @@ Steps:
 
     pip install -r requirements.txt
 
-  6. Create the database to save the inputs using the below codes (in the terminal),
-
-    python manage.py makemigrations
-
-  7. Then run this code (in the terminal),
+  6. Then run this code (in the terminal),
       
     python manage.py migrate     
 
-  8. To get the website running, run the below code (in the terminal),
+  7. To get the website running, run the below code (in the terminal),
 
     python manage.py runserver 
 
-  9. Then run this code on the web to open the website,
+  8. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
@@ -62,24 +58,33 @@ Steps:
 
     pip install -r requirements.txt
 
-  7. Create the database to save the inputs using the below codes (in the terminal),
-
-    python manage.py makemigrations
-
-  8. Then run this code (in the terminal),
+  7. Then run this code (in the terminal),
       
     python manage.py migrate     
 
-  9. Once the folder is open then go to the terminal of that folder and run the below code,
+  8. Once the folder is open then go to the terminal of that folder and run the below code,
 
     python manage.py runserver 
 
-  10. Then run this code on the web to open the website,
+  9. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
-1.3. Creating a superuser and logging in 
+1.3. Creating a superuser and getting the database (Locally on your laptop)
 
+Steps:
+   1. In the terminal run,
+
+    python manage.py createsuperuser
+
+   2. Then enter the login details you want, including: username, email, password
+
+   3. Then run this code on the web to user the admin panel,
+
+    http://127.0.0.1:8000/admin/
+
+   4. You will be able to see the database with all the content 
+      
 2. Details on the project
 
 2.1. How to read the different folders and files 
@@ -109,7 +114,7 @@ The about page of the app has the below features,
 
    - A detailed story about the saloon
    - A what we offer section
-   - A why chooose us section
+   - A why choose us section
 
 2.2.3. Our team page 
 
