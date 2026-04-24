@@ -4,7 +4,7 @@ This Readme will provide the below clarifications,
      
    -  Detailed description of all the key components and features of the project
 
-1. Guidence to open the project locally
+1. Guidence to open the project locally and make an account 
 
 There are two main ways to open it locally 
 
@@ -29,11 +29,19 @@ Steps:
 
     pip install -r requirements.txt
 
-  6. Once the folder is open then go to the terminal of that specfic folder and run the below code,
+  6. Create the database to save the inputs using the below codes (in the terminal),
+
+    python manage.py makemigrations
+
+  7. Then run this code (in the terminal),
+      
+    python manage.py migrate     
+
+  8. To get the website running, run the below code (in the terminal),
 
     python manage.py runserver 
 
-  7. Then run this code on the web to open the website,
+  9. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
@@ -54,11 +62,19 @@ Steps:
 
     pip install -r requirements.txt
 
-  7. Once the folder is open then go to the terminal of that folder and run the below code,
+  7. Create the database to save the inputs using the below codes (in the terminal),
+
+    python manage.py makemigrations
+
+  8. Then run this code (in the terminal),
+      
+    python manage.py migrate     
+
+  9. Once the folder is open then go to the terminal of that folder and run the below code,
 
     python manage.py runserver 
 
-  8. Then run this code on the web to open the website,
+  10. Then run this code on the web to open the website,
 
     http://127.0.0.1:8000/
 
