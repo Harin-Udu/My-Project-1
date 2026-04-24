@@ -13,19 +13,32 @@
 
   <!-- the navigation bar section to move between projects -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Valencia</div>
-      <ul class="nav-links">
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
-        <li><a href="{% url 'our_team' %}">Our Team</a></li>
-        <li><a href="{% url 'help' %}">Support</a></li>
-        <li><a href="/booking/">Book Now</a></li>
+  <nav class="navbar">
+    <a href="{% url 'home' %}" class="logo">Valencia</a>
+
+    <ul class="nav-links">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About Us</a></li>
+      <li><a href="{% url 'our_team' %}">Our Team</a></li>
+      <li><a href="{% url 'help' %}">Support</a></li>
+
+      <li><a href="/booking/">Book Now</a></li>
+
+      {% if user.is_authenticated %}
+        <li>
+          <form action="/accounts/logout/" method="POST" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" class="btn" style="border:none; cursor:pointer;">Logout</button>
+          </form>
+        </li>
+      {% else %}
         <li><a href="/accounts/login/">Login</a></li>
-      </ul>
-      <a href="" class="btn">Book Now</a>
-    </nav>
-  </header>
+      {% endif %}
+    </ul>
+
+    <a href="/booking/" class="btn">Book Now</a>
+  </nav>
+</header>
 
     <!-- the main heading of the page -->
   <section class="hero" id="home" style="background: url('{% static "salon/images/hero-banner-image.avif" %}') center/cover no-repeat;">
