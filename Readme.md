@@ -11,11 +11,11 @@ There are two main ways to open it locally
 Steps: 
   1. Open your IDE (vs code, pycharm) and get the terminal of where you want to save the project 
 
-  2.Then run, (This will save the folder in the location you want)
+  2. Then run, (This will save the folder in the location you want)
       
     git clone https://github.com/Harin-Udu/My-Project-1.git
   
-  3.Then run, (this leads the terminal to that specific location)
+  3. Then run, (this leads the terminal to that specific location)
       
     cd My-Project-1 
   
