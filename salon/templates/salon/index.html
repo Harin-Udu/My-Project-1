@@ -27,12 +27,12 @@
       {% if user.is_authenticated %}
       <form action="/accounts/logout/" method="POST" style="display:inline;">
         {% csrf_token %}
-        <button class="btn">Logout</button>
+        <button class="button">Logout</button>
       </form>
-      <a href="/booking/" class="btn">Book Now</a>
+      <a href="/booking/" class="button">Book Now</a>
     {% else %}
-      <a href="/accounts/login/" class="btn">Login</a>
-      <a href="/booking/" class="btn">Book Now</a>
+      <a href="/accounts/login/" class="button">Login</a>
+      <a href="/booking/" class="button">Book Now</a>
     {% endif %}
     </div>
   </nav>
