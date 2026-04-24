@@ -78,6 +78,8 @@ Steps:
 
     http://127.0.0.1:8000/
 
+1.3. Creating a superuser and logging in 
+
 2. Details on the project
 
 2.1. How to read the different folders and files 
