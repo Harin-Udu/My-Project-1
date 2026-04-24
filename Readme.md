@@ -25,7 +25,7 @@ Steps:
 
     code .
 
-  5. IMPORTANT:- Downloaded the needed libraries, if not already downloaded,
+  5. IMPORTANT:- Download the needed libraries, if not already downloaded,
 
     pip install -r requirements.txt
 
@@ -50,7 +50,7 @@ Steps:
 
   5. Then open the main folder in your IDE
 
-  6. IMPORTANT:- Downloaded the needed libraries, if not already downloaded,
+  6. IMPORTANT:- Download the needed libraries, if not already downloaded,
 
     pip install -r requirements.txt
 
