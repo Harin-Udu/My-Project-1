@@ -20,13 +20,11 @@ header {
 }
 
 .navbar {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 18px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 18px 5%;
+  position: relative;   /* important */
 }
 
 .logo {
@@ -42,7 +40,11 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 22px;
+  gap: 30px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -67,6 +69,20 @@ header {
 
 .btn:hover {
   background: #a94d67;
+}
+
+.button {
+  background: #c86b85;   
+  color: white;          
+  border: none;
+  padding: 12px 24px;    
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #a94d67;   
 }
 
 /* ── HERO ── */
